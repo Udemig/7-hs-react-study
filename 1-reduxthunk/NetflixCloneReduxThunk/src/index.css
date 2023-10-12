@@ -46,6 +46,16 @@ button:focus-visible {
   bottom:15px;
 }
 
+.movie{
+  max-width: 300px;
+  transition: all .3s;
+cursor: pointer;
+}
+
+.movie:hover{
+  scale: 1.1;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;

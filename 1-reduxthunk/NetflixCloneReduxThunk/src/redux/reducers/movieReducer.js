@@ -8,11 +8,18 @@ const initialState = {
 
 export const movieReducer = (state = initialState, action) => {
   switch (action.type) {
+    //Filmelri stateye aktarma
     case actionTypes.SET_MOVIES:
       return {
         ...state,
         popularMovies: action.payload,
-        isLoading:false
+        isLoading: false,
+      };
+    //Kategırileri state aktarma
+    case actionTypes.SET_CATEGORIES:
+      return {
+        ...state,
+        genres: action.payload,
       };
 
     default:

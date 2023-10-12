@@ -17,7 +17,7 @@ const DetailPage = () => {
       .then((response) => setDetail(response.data));
   }, []);
 
-  console.log("detay", detail);
+  //console.log("detay", detail);
   const sum = detail?.revenue - detail?.budget;
   if (!detail) return <Loading />;
   return (

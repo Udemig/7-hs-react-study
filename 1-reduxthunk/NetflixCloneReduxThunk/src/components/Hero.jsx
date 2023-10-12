@@ -13,7 +13,7 @@ const Hero = () => {
   const randomIndex = Math.floor(Math.random() * movieList.length);
   //console.log(randomIndex)
   const randomMovie = movieList[randomIndex];
-  console.log(randomMovie);
+  //console.log(randomMovie);
 
   return (
     <div className="row p-4">
